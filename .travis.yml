@@ -11,4 +11,6 @@ install:
   - sudo apt-get install ansible -y
 
 script:
+  - pwd
+  - ls -al eRadical/ansible-my-fedora-workstation/
   - ansible-playbook --syntax-check configure-fedora.yml
