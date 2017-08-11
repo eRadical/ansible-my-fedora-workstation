@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+AP=$(which ansible-playbook)
+
+sudo dnf -y --refresh install ansible cowsay python2-dnf python3-dnf
+
+$AP configure-fedora.yml
