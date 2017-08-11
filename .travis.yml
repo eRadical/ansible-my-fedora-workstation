@@ -9,8 +9,8 @@ addons:
 
 install:
   - sudo apt-get install ansible -y
+  - sudo pip install -U ansible
 
 script:
   - pwd
-  - ls -al eRadical/ansible-my-fedora-workstation/
-  - ansible-playbook --syntax-check configure-fedora.yml
+  - ansible-playbook --syntax-check -i inventory/ configure-fedora.yml
