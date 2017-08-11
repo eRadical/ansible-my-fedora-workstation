@@ -1,0 +1,14 @@
+dist: trusty
+sudo: required
+language: bash
+
+addons:
+  apt:
+    sources:
+    - sourceline: 'ppa:ansible/ansible'
+
+install:
+  - sudo apt-get install ansible -y
+
+script:
+  - ansible-playbook --syntax-check configure-fedora.yml
