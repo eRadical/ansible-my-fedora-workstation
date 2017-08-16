@@ -1,0 +1,9 @@
+---
+add_google_chrome: yes
+google_chrome_version:
+  - stable
+#  - beta
+#  - unstable
+
+developer_machine: yes
+dev_pycharm: yes

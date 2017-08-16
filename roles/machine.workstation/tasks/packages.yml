@@ -1,0 +1,14 @@
+---
+- name: Install packages
+  dnf:
+    name: "{{ item }}"
+    state: latest
+  become: true
+  with_items: "{{ install_packages }}"
+
+- name: Remove some packages
+  dnf:
+    name: "{{ item }}"
+    state: absent
+  become: true
+  with_items: "{{ remove_packages }}"

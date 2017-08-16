@@ -12,6 +12,7 @@ How to run...
 - You should make sure you can `sudo` to `root` without password,
 - Clone the repo,
 - Open a terminal and go in the folder it was cloned,
+- Change variables from inventory/group_vars/all as you wish,
 - Run the script `configure-fedora`
 
 Contributions

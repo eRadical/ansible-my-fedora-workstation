@@ -1,0 +1,21 @@
+---
+- name: Start usefull services
+  systemd:
+    name: "{{ item }}"
+    state: started
+    enabled: yes
+  become: true
+  with_items:
+    - numad
+    - tuned
+    - ntpd
+
+- name: Stop unusefull services
+  systemd:
+    name: "{{ item }}"
+    state: stopped
+    enabled: no
+    masked: yes
+  become: true
+  with_items:
+    - iio-sensor-proxy

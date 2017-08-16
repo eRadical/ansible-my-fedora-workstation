@@ -1,0 +1,33 @@
+---
+install_packages:
+  - awscli
+  - bmon
+  - docker
+  - fuse-sshfs
+  - golang
+  - golang-bin
+  - golang-src
+  - google-authenticator
+  - htop
+  - iftop
+  - iotop
+  - iptraf-ng
+  - kernel-devel
+  - lokalize
+  - meld
+  - nautilus-open-terminal
+  - nload
+  - nmon
+  - ntop
+  - perf
+  - php
+  - php-cli
+  - poedit
+  - rkhunter
+  - s3cmd
+  - strace
+  - vim-common
+  - vim-enhanced
+  - vim-filesystem
+  - wireshark-gnome
+  - xorg-x11-server-Xvfb

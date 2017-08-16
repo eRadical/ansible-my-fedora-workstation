@@ -1,0 +1,12 @@
+galaxy_info:
+  author: eRadical
+  description: your description
+
+  license: GPLv3
+
+  min_ansible_version: 2.3.2.0
+
+  platforms:
+  - name: Fedora
+    versions:
+    - 26

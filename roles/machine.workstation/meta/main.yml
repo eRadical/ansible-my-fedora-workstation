@@ -1,0 +1,12 @@
+galaxy_info:
+  author: eRadical
+  description: Tweaks to a workstation machine
+
+  license: GPLv3
+
+  min_ansible_version: 1.2
+
+  platforms:
+  - name: Fedora
+    versions:
+    - 26
