@@ -5,5 +5,11 @@ google_chrome_version:
 #  - beta
 #  - unstable
 
+# Accept router advertisements
+ipv6_accept_ra: yes
+# Duplicate Address Detection
+ipv6_accept_dad: no
+
+
 developer_machine: yes
 dev_pycharm: yes

@@ -1,0 +1,14 @@
+---
+- name: Enable router advertisements
+  sysctl:
+    name: "net.ipv6.conf.{{ item }}.accept_ra"
+    value: 1
+    state: present
+  with_items: "{{ ansible_interfaces }} + ['all']"
+
+- name: Disable DAD (Duplicate Address Detection)
+  sysctl:
+    name: "net.ipv6.conf.{{ item }}.accept_dad"
+    value: 0
+    state: present
+  with_items: "{{ ansible_interfaces }} + ['all']"

@@ -1,6 +1,11 @@
 ---
 - include: repos.yml
+
 - include: packages.yml
+
 - include: services.yml
+
 - include: google_chrome.yml
   when: add_google_chrome|bool == True
+
+- include: networking.yml
