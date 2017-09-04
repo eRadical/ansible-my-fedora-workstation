@@ -12,3 +12,10 @@
     state: absent
   become: true
   with_items: "{{ remove_packages }}"
+
+- name: Install Slack
+  dnf:
+    name: slack
+    state: latest
+  become: true
+  when: workstation_slack|bool == True

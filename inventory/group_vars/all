@@ -10,6 +10,7 @@ ipv6_accept_ra: yes
 # Duplicate Address Detection
 ipv6_accept_dad: no
 
+workstation_slack: yes
 
 developer_machine: yes
 
