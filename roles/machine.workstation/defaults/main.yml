@@ -56,6 +56,7 @@ install_packages:
   - libreoffice-langpack-en
   - libreoffice-langpack-ro
   - libreoffice-wiki-publisher
+  - libselinux-python
   - lm_sensors
   - lshw
   - lynx
