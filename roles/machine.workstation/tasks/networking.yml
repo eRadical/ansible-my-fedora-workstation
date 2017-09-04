@@ -4,6 +4,7 @@
     name: "net.ipv6.conf.{{ item }}.accept_ra"
     value: 1
     state: present
+    ignoreerrors: yes
   with_items: "{{ ansible_interfaces }} + ['all']"
 
 - name: Disable DAD (Duplicate Address Detection)
@@ -11,4 +12,5 @@
     name: "net.ipv6.conf.{{ item }}.accept_dad"
     value: 0
     state: present
+    ignoreerrors: yes
   with_items: "{{ ansible_interfaces }} + ['all']"

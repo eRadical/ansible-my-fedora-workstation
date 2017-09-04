@@ -12,4 +12,8 @@ ipv6_accept_dad: no
 
 
 developer_machine: yes
+
 dev_pycharm: yes
+
+dev_atom: yes
+dev_atom_version: 1.19.5
