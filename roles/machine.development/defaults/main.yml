@@ -31,3 +31,4 @@ install_packages:
   - vim-filesystem
   - wireshark-gnome
   - xorg-x11-server-Xvfb
+  - moreutils
