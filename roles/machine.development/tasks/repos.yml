@@ -1,7 +1,7 @@
 ---
 
 - name: DNF enable PyCharm COPR repo
-  command: /usr/bin/dnf copr enable phracek/PyCharm
+  command: /usr/bin/dnf -y copr enable phracek/PyCharm
   args:
     creates: /etc/yum.repos.d/_copr_phracek-PyCharm.repo
   when: dev_pycharm|bool == True
