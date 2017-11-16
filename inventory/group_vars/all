@@ -16,5 +16,10 @@ developer_machine: yes
 
 dev_pycharm: yes
 
+### See: https://confluence.jetbrains.com/display/PhpStorm/Previous+PhpStorm+Releases
+dev_phpstorm: yes
+dev_phpstorm_version: 2017.2
+dev_phpstorm_build: 172.3317.83
+
 dev_atom: yes
 dev_atom_version: 1.19.5

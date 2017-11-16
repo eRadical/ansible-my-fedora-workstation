@@ -4,3 +4,6 @@
 - include: packages.yml
 
 - include: services.yml
+
+- include: phpstorm.yml
+  when: dev_phpstorm|bool == True
