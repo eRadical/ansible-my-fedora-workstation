@@ -1,6 +1,8 @@
 ---
+
+remove_evolution: no
+
 remove_packages:
-  - evolution
   - fprintd
 
 install_packages:
@@ -12,7 +14,6 @@ install_packages:
   - earth-and-moon-backgrounds-common
   - earth-and-moon-backgrounds-dual
   - "f{{ ansible_distribution_major_version }}-backgrounds"
-  - "f{{ ansible_distribution_major_version }}-backgrounds-animated"
   - "f{{ ansible_distribution_major_version }}-backgrounds-base"
   - "f{{ ansible_distribution_major_version }}-backgrounds-extras-base"
   - "f{{ ansible_distribution_major_version }}-backgrounds-extras-gnome"

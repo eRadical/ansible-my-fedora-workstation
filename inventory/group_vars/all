@@ -1,4 +1,7 @@
 ---
+
+remove_evolution: yes
+
 add_google_chrome: yes
 google_chrome_version:
   - stable
@@ -18,8 +21,8 @@ dev_pycharm: yes
 
 ### See: https://confluence.jetbrains.com/display/PhpStorm/Previous+PhpStorm+Releases
 dev_phpstorm: yes
-dev_phpstorm_version: 2017.2
-dev_phpstorm_build: 172.3317.83
+dev_phpstorm_version: 2017.2.4
+dev_phpstorm_build: 172.4155.41
 
 dev_atom: yes
 dev_atom_version: 1.23.0-beta1

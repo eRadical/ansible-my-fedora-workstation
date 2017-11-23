@@ -13,6 +13,13 @@
   become: true
   with_items: "{{ remove_packages }}"
 
+- name: Remove Evolution
+  dnf:
+    name: evolution
+    state: absent
+  become: true
+  when: remove_evolution|bool == True
+
 - name: Install Slack
   dnf:
     name: slack
