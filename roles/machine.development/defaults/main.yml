@@ -32,3 +32,4 @@ install_packages:
   - wireshark-gnome
   - xorg-x11-server-Xvfb
   - moreutils
+  - libfaketime
