@@ -24,5 +24,6 @@ dev_phpstorm: yes
 dev_phpstorm_version: 2017.2.4
 dev_phpstorm_build: 172.4155.41
 
+### See latest release at https://github.com/atom/atom/releases
 dev_atom: yes
 dev_atom_version: 1.23.0-beta1
