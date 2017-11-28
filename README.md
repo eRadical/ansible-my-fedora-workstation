@@ -1,4 +1,4 @@
-Ansible Playbook(s) to make some adjustments to a Fedora Workstation
+Ansible Playbook to make some adjustments to a Fedora Workstation
 ====================================================================
 [![Build Status](https://travis-ci.org/eRadical/ansible-my-fedora-workstation.svg?branch=master)](https://travis-ci.org/eRadical/ansible-my-fedora-workstation)
 

@@ -1,11 +1,11 @@
 ---
-- include: repos.yml
+- include_tasks: repos.yml
 
-- include: packages.yml
+- include_tasks: packages.yml
 
-- include: services.yml
+- include_tasks: services.yml
 
-- include: google_chrome.yml
+- include_tasks: google_chrome.yml
   when: add_google_chrome|bool == True
 
-- include: networking.yml
+- include_tasks: networking.yml

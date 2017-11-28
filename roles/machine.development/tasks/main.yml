@@ -1,12 +1,12 @@
 ---
-- include: repos.yml
+- include_tasks: repos.yml
 
-- include: packages.yml
+- include_tasks: packages.yml
 
-- include: services.yml
+- include_tasks: services.yml
 
-- include: phpstorm.yml
+- include_tasks: phpstorm.yml
   when: dev_phpstorm|bool == True
 
-- include: goland.yml
+- include_tasks: goland.yml
   when: dev_goland|bool == True
