@@ -4,7 +4,7 @@
   get_url:
     url: "http://download.jetbrains.com/webide/PhpStorm-{{ dev_phpstorm_version }}.tar.gz"
     dest: "/opt/PhpStorm-{{ dev_phpstorm_version }}.tar.gz"
-    mode: 0440
+    mode: 0666
 
 - name: Unarchive PhpStorm
   become: true
@@ -12,7 +12,7 @@
     src: "/opt/PhpStorm-{{ dev_phpstorm_version }}.tar.gz"
     dest: /opt
 
-- name: Symlink build to a fixed folder
+- name: Symlink build to a fixed folder for PhpStorm {{ dev_phpstorm_version }}
   become: true
   file:
     src: "/opt/PhpStorm-{{ dev_phpstorm_build }}"
@@ -21,6 +21,7 @@
     force: yes
 
 - name: Put the correct .desktop file
+  become: true
   template:
     src: jetbrains-phpstorm.desktop.j2
     dest: /usr/local/share/applications/jetbrains-phpstorm.desktop

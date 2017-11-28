@@ -7,3 +7,6 @@
 
 - include: phpstorm.yml
   when: dev_phpstorm|bool == True
+
+- include: goland.yml
+  when: dev_goland|bool == True

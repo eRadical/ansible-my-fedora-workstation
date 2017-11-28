@@ -1,0 +1,30 @@
+---
+- name: Download GoLand {{ dev_goland_build }}
+  become: true
+  get_url:
+    url: "https://download.jetbrains.com/go/goland-{{ dev_goland_build }}.tar.gz"
+    dest: "/opt/goland-{{ dev_goland_build }}.tar.gz"
+    mode: "u=rw,g=rw,o=r"
+
+- name: Unarchive GoLand
+  become: true
+  unarchive:
+    src: "/opt/goland-{{ dev_goland_build }}.tar.gz"
+    dest: /opt
+
+- name: Symlink build to a fixed folder for GoLand {{ dev_goland_build }}
+  become: true
+  file:
+    src: "/opt/GoLand-{{ dev_goland_build }}"
+    dest: "/opt/goland"
+    state: link
+    force: yes
+
+- name: Put the correct .desktop file
+  become: true
+  template:
+    src: jetbrains-goland.desktop.j2
+    dest: /usr/local/share/applications/jetbrains-goland.desktop
+    owner: root
+    group: root
+    mode: "u=rw,g=r,o=r"
