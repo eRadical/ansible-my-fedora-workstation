@@ -1,21 +1,21 @@
 ---
-- name: Download GoLand {{ dev_goland_build }}
+- name: Download GoLand {{ dev_goland_version }}
   become: true
   get_url:
-    url: "https://download.jetbrains.com/go/goland-{{ dev_goland_build }}.tar.gz"
-    dest: "/opt/goland-{{ dev_goland_build }}.tar.gz"
+    url: "https://download.jetbrains.com/go/goland-{{ dev_goland_version }}.tar.gz"
+    dest: "/opt/goland-{{ dev_goland_version }}.tar.gz"
     mode: "u=rw,g=rw,o=r"
 
 - name: Unarchive GoLand
   become: true
   unarchive:
-    src: "/opt/goland-{{ dev_goland_build }}.tar.gz"
+    src: "/opt/goland-{{ dev_goland_version }}.tar.gz"
     dest: /opt
 
-- name: Symlink build to a fixed folder for GoLand {{ dev_goland_build }}
+- name: Symlink build to a fixed folder for GoLand {{ dev_goland_version }}
   become: true
   file:
-    src: "/opt/GoLand-{{ dev_goland_build }}"
+    src: "/opt/GoLand-{{ dev_goland_version }}"
     dest: "/opt/goland"
     state: link
     force: yes
