@@ -10,3 +10,6 @@
 
 - include_tasks: goland.yml
   when: dev_goland|bool == True
+
+- include_tasks: gcloud.yml
+  when: gcloud_install|bool == True

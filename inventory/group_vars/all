@@ -20,16 +20,30 @@ developer_machine: yes
 
 dev_pycharm: yes
 
-### See: https://confluence.jetbrains.com/display/PhpStorm/Previous+PhpStorm+Releases
+### Google Cloud Platform - see https://cloud.google.com/sdk/downloads#yum
+gcloud_install: yes
+gcloud_components:
+  - google-cloud-sdk
+  - google-cloud-sdk-app-engine-python
+  - google-cloud-sdk-app-engine-go
+  - kubectl
+#  - google-cloud-sdk-app-engine-java
+#  - google-cloud-sdk-bigtable-emulator
+#  - google-cloud-sdk-datalab
+#  - google-cloud-sdk-datastore-emulator
+#  - google-cloud-sdk-cbt
+#  - google-cloud-sdk-pubsub-emulator
+
+### PhpStorm - see https://confluence.jetbrains.com/display/PhpStorm/Previous+PhpStorm+Releases
 dev_phpstorm: yes
 dev_phpstorm_version: 2017.3.2
 dev_phpstorm_build: 173.4127.29
 
-### See: https://www.jetbrains.com/go/download/
+### Goland - see: https://www.jetbrains.com/go/download/
 dev_goland: yes
 dev_goland_version: 2017.3
 dev_goland_build: 173.3727.96
 
-### See latest release at https://github.com/atom/atom/releases
+### Atom - see https://github.com/atom/atom/releases
 dev_atom: yes
 dev_atom_version: 1.24.0-beta1

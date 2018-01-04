@@ -1,0 +1,20 @@
+---
+- name: Install Gcloud repo
+  yum_repository:
+    name: google-cloud-sdk
+    description: Google Cloud SDK
+    baseurl: https://packages.cloud.google.com/yum/repos/cloud-sdk-el7-x86_64
+    enabled: yes
+    gpgcheck: yes
+    repo_gpgcheck: yes
+    gpgkey:
+      - https://packages.cloud.google.com/yum/doc/yum-key.gpg
+      - https://packages.cloud.google.com/yum/doc/rpm-package-key.gpg
+    skip_if_unavailable: yes
+
+- name: Install GCP stuff
+  dnf:
+    name: "{{ item }}"
+    state: latest
+  become: true
+  with_items: "{{ gcloud_components }}"
