@@ -18,8 +18,6 @@ workstation_hipchat: yes
 
 developer_machine: yes
 
-dev_pycharm: yes
-
 ### Google Cloud Platform - see https://cloud.google.com/sdk/downloads#yum
 gcloud_install: yes
 gcloud_components:
@@ -33,6 +31,11 @@ gcloud_components:
 #  - google-cloud-sdk-datastore-emulator
 #  - google-cloud-sdk-cbt
 #  - google-cloud-sdk-pubsub-emulator
+
+docker_install: yes
+
+### PyCharm - from Copr repo see https://copr-be.cloud.fedoraproject.org
+dev_pycharm: yes
 
 ### PhpStorm - see https://confluence.jetbrains.com/display/PhpStorm/Previous+PhpStorm+Releases
 dev_phpstorm: yes

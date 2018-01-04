@@ -2,7 +2,6 @@
 install_packages:
   - awscli
   - bmon
-  - docker
   - fuse-sshfs
   - golang
   - golang-bin

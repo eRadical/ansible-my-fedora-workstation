@@ -13,3 +13,6 @@
 
 - include_tasks: gcloud.yml
   when: gcloud_install|bool == True
+
+- include_tasks: docker.yml
+  when: docker_install|bool == True

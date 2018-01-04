@@ -1,0 +1,22 @@
+---
+- name: Install docker
+  dnf:
+    name: "{{ item }}"
+    state: latest
+  become: true
+  with_items:
+    - docker
+    - docker-compose
+
+- name: Create docker group
+  group:
+    name: docker
+    state: present
+    system: yes
+  become: true
+
+- name: Append the user to docker group
+  user:
+    name: "{{ ansible_user_id }}"
+    groups: docker
+    append: yes
