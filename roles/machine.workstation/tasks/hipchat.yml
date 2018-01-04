@@ -1,0 +1,16 @@
+---
+- name: Install Hipchat repo
+  yum_repository:
+    name: atlassian-hipchat
+    description: Atlassian Hipchat
+    baseurl: https://atlassian.artifactoryonline.com/atlassian/hipchat-yum-client/
+    enabled: yes
+    gpgcheck: no
+    gpgkey: https://atlassian.artifactoryonline.com/atlassian/api/gpg/key/public
+    skip_if_unavailable: yes
+
+- name: Install Hipchat
+  dnf:
+    name: hipchat4
+    state: latest
+  become: true

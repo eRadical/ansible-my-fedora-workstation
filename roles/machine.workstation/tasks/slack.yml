@@ -1,0 +1,17 @@
+---
+- name: Install Slack repo
+  yum_repository:
+    name: slack
+    description: slack
+    baseurl: https://packagecloud.io/slacktechnologies/slack/fedora/21/x86_64
+    enabled: yes
+    gpgcheck: no
+    gpgkey: https://packagecloud.io/gpg.key
+    sslverify: yes
+    sslcacert: /etc/pki/tls/certs/ca-bundle.crt
+
+- name: Install Slack
+  dnf:
+    name: slack
+    state: latest
+  become: true

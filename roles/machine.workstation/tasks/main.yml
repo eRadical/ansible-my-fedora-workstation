@@ -8,4 +8,10 @@
 - include_tasks: google_chrome.yml
   when: add_google_chrome|bool == True
 
+- include_tasks: slack.yml
+  when: workstation_slack|bool == True
+
+- include_tasks: hipchat.yml
+  when: workstation_hipchat|bool == True
+
 - include_tasks: networking.yml
