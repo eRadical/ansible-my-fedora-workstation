@@ -1,0 +1,12 @@
+---
+- name: Install packages
+  dnf:
+    name: "{{ item }}"
+    state: latest
+  become: true
+  with_items:
+  - python-dopy
+
+- name: Try to install doctl, but don't fail the whole thing
+  command: go get -u github.com/digitalocean/doctl/cmd/doctl
+  ignore_errors: yes

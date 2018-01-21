@@ -1,5 +1,4 @@
 ---
-
 - name: DNF enable PyCharm COPR repo
   command: /usr/bin/dnf -y copr enable phracek/PyCharm
   args:

@@ -1,0 +1,35 @@
+---
+- name: Install packages
+  dnf:
+    name: "{{ item }}"
+    state: latest
+  become: true
+  with_items:
+  - golang
+  - golang-bin
+  - golang-src
+
+- name: Creates GOPATH directory
+  file:
+    path: "{{ go_gopath }}"
+    state: directory
+    recurse: yes
+    mode: 0755
+
+- name: Add GOPATH to .bashrc
+  lineinfile:
+    path: ~/.bashrc
+    line: "GOPATH={{ go_gopath }}"
+    insertbefore: EOF
+
+- name: Add GOPATH/bin to .bashrc
+  lineinfile:
+    path: ~/.bashrc
+    line: "PATH={{ go_gopath }}/bin:$PATH"
+    insertbefore: EOF
+
+- name: Export GOPATH and PATH
+  lineinfile:
+    path: ~/.bashrc
+    line: "export GOPATH PATH"
+    insertbefore: EOF

@@ -18,6 +18,9 @@ dhcp_disable_duid: yes
 workstation_slack: yes
 workstation_hipchat: yes
 
+################################################################################
+### Below are setting for a developer machine
+################################################################################
 developer_machine: yes
 
 ### Google Cloud Platform - see https://cloud.google.com/sdk/downloads#yum
@@ -36,6 +39,11 @@ gcloud_components:
 
 docker_install: yes
 nodejs_install: yes
+
+go_install: yes
+go_gopath: ~/WORKSPACE/GO
+
+digitalocean_install: yes
 
 ### PyCharm - from Copr repo see https://copr-be.cloud.fedoraproject.org
 dev_pycharm: yes

@@ -3,9 +3,6 @@ install_packages:
   - awscli
   - bmon
   - fuse-sshfs
-  - golang
-  - golang-bin
-  - golang-src
   - google-authenticator
   - htop
   - iftop

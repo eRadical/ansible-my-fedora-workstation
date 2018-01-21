@@ -8,8 +8,13 @@
 - include_tasks: phpstorm.yml
   when: dev_phpstorm|bool == True
 
+- include_tasks: go.yml
+  when: go_install|bool == True
 - include_tasks: goland.yml
   when: dev_goland|bool == True
+
+- include_tasks: digitalocean.yml
+  when: digitalocean_install|bool == True
 
 - include_tasks: gcloud.yml
   when: gcloud_install|bool == True
