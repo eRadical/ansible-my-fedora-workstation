@@ -12,6 +12,8 @@ google_chrome_version:
 ipv6_accept_ra: yes
 # Duplicate Address Detection
 ipv6_accept_dad: no
+# Disable DUID, leave this as is if you're in a network with a Windows DHCP server
+dhcp_disable_duid: yes
 
 workstation_slack: yes
 workstation_hipchat: yes

@@ -14,3 +14,12 @@
     state: present
     ignoreerrors: yes
   with_items: "{{ ansible_interfaces }} + ['all']"
+
+- name: Disable DUID
+  lineinfile:
+    path: /etc/dhcp/dhclient.conf
+    line: "send dhcp-client-identifier = hardware;"
+    owner: root
+    group: root
+    mode: 0644
+  when: dhcp_disable_duid|bool == True
