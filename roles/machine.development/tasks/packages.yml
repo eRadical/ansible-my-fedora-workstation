@@ -33,3 +33,12 @@
   with_items:
   - "https://github.com/atom/atom/releases/download/v{{ dev_atom_version }}/atom.x86_64.rpm"
   when: dev_atom|bool == True
+
+- name: Install NodeJS
+  dnf:
+    name: "{{ item }}"
+    state: present
+  become: true
+  with_items:
+  - nodejs
+  when: nodejs_install|bool == True

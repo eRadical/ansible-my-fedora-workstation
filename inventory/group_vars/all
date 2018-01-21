@@ -33,6 +33,7 @@ gcloud_components:
 #  - google-cloud-sdk-pubsub-emulator
 
 docker_install: yes
+nodejs_install: yes
 
 ### PyCharm - from Copr repo see https://copr-be.cloud.fedoraproject.org
 dev_pycharm: yes

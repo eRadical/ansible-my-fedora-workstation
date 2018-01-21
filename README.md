@@ -16,7 +16,7 @@ Workstation role changes:
 Developer role changes:
 =======================
 - Installs a lot of packages used by sysadmins and/or developers (awscli, s3cmd, docker, golang, php, meld, strace, etc.)
-- Installs development tools
+- Installs Development Tools
 - Installs PyCharm Community Edition
 - Installs PhpStorm
 - Installs GoLand
