@@ -43,6 +43,9 @@ nodejs_install: yes
 go_install: yes
 go_gopath: ~/WORKSPACE/GO
 
+# Install PHP 7.2 from Remi repos
+php72_remi: yes
+
 digitalocean_install: yes
 
 ### PyCharm - from Copr repo see https://copr-be.cloud.fedoraproject.org

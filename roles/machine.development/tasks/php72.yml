@@ -1,0 +1,29 @@
+---
+- name: Install REMI repo
+  yum_repository:
+    name: remi
+    description: Remi's RPM repository for Fedora $releasever - $basearch
+    #baseurl: http://rpms.remirepo.net/fedora/$releasever/remi/$basearch/
+    mirrorlist: http://cdn.remirepo.net/fedora/$releasever/remi/mirror
+    enabled: yes
+    gpgcheck: yes
+    gpgkey: http://rpms.remirepo.net/RPM-GPG-KEY-remi
+    #skip_if_unavailable: yes
+    #failovermethod: priority
+- name: Install REMI PHP 7.2 repo
+  yum_repository:
+    name: remi-php72
+    description: Remi's PHP 7.2 RPM repository for Fedora $releasever - $basearch
+    #baseurl: http://rpms.remirepo.net/fedora/$releasever/php72/$basearch/
+    mirrorlist: http://cdn.remirepo.net/fedora/$releasever/php72/mirror
+    enabled: yes
+    gpgcheck: yes
+    gpgkey: http://rpms.remirepo.net/RPM-GPG-KEY-remi
+    #skip_if_unavailable: yes
+    #failovermethod: priority
+
+- name: Install PyCharm
+  dnf:
+    name: php*
+    state: latest
+  become: true
