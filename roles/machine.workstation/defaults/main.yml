@@ -4,6 +4,9 @@ remove_evolution: no
 
 remove_packages:
   - fprintd
+  - 'zeitgeist*'
+  - gedit-plugin-zeitgeist
+  - gedit-plugins
 
 install_packages:
   - astronomy-backgrounds
@@ -33,14 +36,12 @@ install_packages:
   - gedit-plugin-git
   - gedit-plugin-joinlines
   - gedit-plugin-multiedit
-  - gedit-plugins
   - gedit-plugins-data
   - gedit-plugin-smartspaces
   - gedit-plugin-synctex
   - gedit-plugin-terminal
   - gedit-plugin-textsize
   - gedit-plugin-wordcompletion
-  - gedit-plugin-zeitgeist
   - glances
   - gnome-backgrounds
   - gnome-backgrounds-extras
