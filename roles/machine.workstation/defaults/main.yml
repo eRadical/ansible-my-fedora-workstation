@@ -7,6 +7,7 @@ remove_packages:
   - 'zeitgeist*'
   - gedit-plugin-zeitgeist
   - gedit-plugins
+  - tracker-miners
 
 install_packages:
   - astronomy-backgrounds
