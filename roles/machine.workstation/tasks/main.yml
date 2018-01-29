@@ -15,3 +15,9 @@
   when: workstation_hipchat|bool == True
 
 - include_tasks: networking.yml
+
+- name: Stop tracker-store.desktop
+  become: yes
+  file:
+    path: /etc/xdg/autostart/tracker-store.desktop
+    state: absent
