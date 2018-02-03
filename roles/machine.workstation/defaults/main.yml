@@ -50,6 +50,7 @@ install_packages:
   - gnome-shell-extension-gpaste
   - gnome-shell-extension-openweather
   - gnome-tweak-tool
+  - gparted
   - gwenview
   - kernel-modules-extra
   - libreoffice-gallery-vrt-network-equipment

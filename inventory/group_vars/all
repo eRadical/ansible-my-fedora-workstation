@@ -12,8 +12,8 @@ google_chrome_version:
 ipv6_accept_ra: yes
 # Duplicate Address Detection
 ipv6_accept_dad: no
-# Disable DUID, leave this as is if you're in a network with a Windows DHCP server
-dhcp_disable_duid: yes
+# Disable DUID: enable this if you're in a network with a Windows DHCP server
+dhcp_disable_duid: no
 
 workstation_slack: yes
 workstation_hipchat: yes
@@ -53,14 +53,14 @@ dev_pycharm: yes
 
 ### PhpStorm - see https://confluence.jetbrains.com/display/PhpStorm/Previous+PhpStorm+Releases
 dev_phpstorm: yes
-dev_phpstorm_version: 2017.3.2
-dev_phpstorm_build: 173.4127.29
+dev_phpstorm_version: 2017.3.4
+dev_phpstorm_build: 173.4548.32
 
 ### Goland - see: https://www.jetbrains.com/go/download/
 dev_goland: yes
-dev_goland_version: 2017.3
-dev_goland_build: 173.3727.96
+dev_goland_version: 2017.3.2
+dev_goland_build: 173.4548.17
 
 ### Atom - see https://github.com/atom/atom/releases
 dev_atom: yes
-dev_atom_version: 1.24.0-beta1
+dev_atom_version: 1.24.0-beta3

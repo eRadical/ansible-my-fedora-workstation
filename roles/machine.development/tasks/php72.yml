@@ -22,8 +22,11 @@
     #skip_if_unavailable: yes
     #failovermethod: priority
 
-- name: Install PyCharm
-  dnf:
-    name: php*
-    state: latest
+- name: Install PHP packages
   become: true
+  dnf:
+    name: "{{ item }}"
+    state: present
+  with_items:
+    - php
+    - php-cli

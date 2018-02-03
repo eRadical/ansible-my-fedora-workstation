@@ -16,8 +16,6 @@ install_packages:
   - nmon
   - ntop
   - perf
-  - php
-  - php-cli
   - poedit
   - rkhunter
   - s3cmd
