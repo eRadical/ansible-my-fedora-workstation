@@ -19,3 +19,17 @@
   become: true
   with_items:
     - iio-sensor-proxy
+
+- name: Mask evolution services if we removed evolution
+  systemd:
+    name: "{{ item }}"
+    state: stopped
+    enabled: no
+    masked: yes
+    user: yes
+  become: false
+  with_items:
+    - evolution-calendar-factory.service
+    - evolution-source-registry.service
+    - evolution-addressbook-factory.service
+  when: remove_evolution|bool == True
