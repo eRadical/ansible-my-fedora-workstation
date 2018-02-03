@@ -1,5 +1,9 @@
 ---
 
+disable_gvfs_afc: yes
+disable_gvfs_gphoto2: yes
+disable_gvfs_mtp: yes
+
 remove_evolution: no
 
 remove_packages:

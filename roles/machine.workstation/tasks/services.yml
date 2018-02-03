@@ -33,3 +33,30 @@
     - evolution-source-registry.service
     - evolution-addressbook-factory.service
   when: remove_evolution|bool == True
+
+- name: Disable - Virtual filesystem service - Apple File Conduit monitor
+  systemd:
+    name: gvfs-afc-volume-monitor.service
+    state: stopped
+    enabled: no
+    user: yes
+  become: false
+  when: disable_gvfs_afc|bool == True
+
+- name: Disable - Virtual filesystem service - digital camera monitor
+  systemd:
+    name: gvfs-gphoto2-volume-monitor.service
+    state: stopped
+    enabled: no
+    user: yes
+  become: false
+  when: disable_gvfs_gphoto2|bool == True
+
+- name: Disable - Virtual filesystem service - Media Transfer Protocol monitor
+  systemd:
+    name: gvfs-mtp-volume-monitor.service
+    state: stopped
+    enabled: no
+    user: yes
+  become: false
+  when: disable_gvfs_mtp|bool == True

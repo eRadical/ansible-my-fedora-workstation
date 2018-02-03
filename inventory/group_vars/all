@@ -2,6 +2,13 @@
 
 remove_evolution: yes
 
+### Disable - Virtual filesystem service - Apple File Conduit monitor
+disable_gvfs_afc: yes
+### Disable - Virtual filesystem service - digital camera monitor
+disable_gvfs_gphoto2: yes
+### Disable - Virtual filesystem service - Media Transfer Protocol monitor
+disable_gvfs_mtp: yes
+
 add_google_chrome: yes
 google_chrome_version:
   - stable
