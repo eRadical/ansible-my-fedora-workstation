@@ -35,13 +35,15 @@ gcloud_install: yes
 gcloud_components:
   - google-cloud-sdk
   - google-cloud-sdk-app-engine-python
+  - google-cloud-sdk-app-engine-python-extras
   - google-cloud-sdk-app-engine-go
   - kubectl
+  - google-cloud-sdk-app-engine-grpc
 #  - google-cloud-sdk-app-engine-java
 #  - google-cloud-sdk-bigtable-emulator
+#  - google-cloud-sdk-cbt
 #  - google-cloud-sdk-datalab
 #  - google-cloud-sdk-datastore-emulator
-#  - google-cloud-sdk-cbt
 #  - google-cloud-sdk-pubsub-emulator
 
 docker_install: yes
