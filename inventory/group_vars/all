@@ -60,14 +60,14 @@ dev_pycharm: yes
 
 ### PhpStorm - see https://confluence.jetbrains.com/display/PhpStorm/Previous+PhpStorm+Releases
 dev_phpstorm: yes
-dev_phpstorm_version: 2017.3.4
-dev_phpstorm_build: 173.4548.32
+dev_phpstorm_version: 2018.1
+dev_phpstorm_build: 181.4203.565
 
 ### Goland - see: https://www.jetbrains.com/go/download/
 dev_goland: yes
-dev_goland_version: 2017.3.2
-dev_goland_build: 173.4548.17
+dev_goland_version: 2018.1
+dev_goland_build: 181.4203.567
 
 ### Atom - see https://github.com/atom/atom/releases
 dev_atom: yes
-dev_atom_version: 1.24.0-beta3
+dev_atom_version: 1.26.0-beta0
