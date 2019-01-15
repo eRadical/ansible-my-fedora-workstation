@@ -23,7 +23,7 @@ ipv6_accept_dad: no
 dhcp_disable_duid: no
 
 workstation_slack: yes
-workstation_hipchat: yes
+workstation_hipchat: no
 
 ################################################################################
 ### Below are setting for a developer machine
