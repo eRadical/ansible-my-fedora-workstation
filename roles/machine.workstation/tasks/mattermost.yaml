@@ -1,0 +1,12 @@
+---
+
+- name: DNF enable Mattermost COPR repo
+  command: "/usr/bin/dnf -y copr enable {{ workstation_mattermost_copr }}"
+  changed_when: False
+  when: workstation_mattermost|bool == True
+
+- name: Install Mattermost
+  dnf:
+    name: mattermost-desktop
+    state: latest
+  become: true

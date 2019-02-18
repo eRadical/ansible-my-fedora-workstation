@@ -11,8 +11,8 @@
 - include_tasks: slack.yml
   when: workstation_slack|bool == True
 
-- include_tasks: hipchat.yml
-  when: workstation_hipchat|bool == True
+- include_tasks: mattermost.yaml
+  when: workstation_mattermost | bool == True
 
 - include_tasks: networking.yml
 
