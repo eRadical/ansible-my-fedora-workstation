@@ -64,8 +64,8 @@ dev_pycharm: yes
 
 ### PhpStorm - see https://confluence.jetbrains.com/display/PhpStorm/Previous+PhpStorm+Releases
 dev_phpstorm: yes
-dev_phpstorm_version: 2018.2.4
-dev_phpstorm_build: 182.4505.42
+dev_phpstorm_version: 2018.3.4
+dev_phpstorm_build: 183.5429.47
 
 ### Goland - see: https://www.jetbrains.com/go/download/
 dev_goland: yes
