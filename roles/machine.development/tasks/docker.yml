@@ -1,12 +1,11 @@
 ---
 - name: Install docker
   dnf:
-    name: "{{ item }}"
+    name:
+      - docker
+      - docker-compose
     state: latest
   become: true
-  with_items:
-    - docker
-    - docker-compose
 
 - name: Create docker group
   group:

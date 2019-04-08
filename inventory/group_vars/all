@@ -11,9 +11,9 @@ disable_gvfs_mtp: yes
 
 add_google_chrome: yes
 google_chrome_version:
-  - stable
-#  - beta
-#  - unstable
+  - google-chrome-stable
+#  - google-chrome-beta
+#  - google-chrome-unstable
 
 # Accept router advertisements
 ipv6_accept_ra: yes
@@ -24,7 +24,7 @@ dhcp_disable_duid: no
 
 workstation_slack: yes
 
-workstation_mattermost: yes
+workstation_mattermost: no
 workstation_mattermost_copr: "agoston/mattermost"
 
 ################################################################################
@@ -63,15 +63,15 @@ digitalocean_install: yes
 dev_pycharm: yes
 
 ### PhpStorm - see https://confluence.jetbrains.com/display/PhpStorm/Previous+PhpStorm+Releases
-dev_phpstorm: yes
+dev_phpstorm: no
 dev_phpstorm_version: 2018.3.4
 dev_phpstorm_build: 183.5429.47
 
 ### Goland - see: https://www.jetbrains.com/go/download/
-dev_goland: yes
+dev_goland: no
 dev_goland_version: 2018.2.3
 dev_goland_build: 182.4505.32
 
 ### Atom - see https://github.com/atom/atom/releases
 dev_atom: yes
-dev_atom_version: 1.32.0-beta1
+dev_atom_version: 1.36.0-beta2

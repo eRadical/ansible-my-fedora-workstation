@@ -10,7 +10,6 @@
 
 - name: Install Google Chrome
   dnf:
-    name: "google-chrome-{{ item }}"
+    name: "{{ google_chrome_version }}"
     state: latest
   become: true
-  with_items: "{{ google_chrome_version }}"

@@ -14,7 +14,6 @@
 
 - name: Install GCP stuff
   dnf:
-    name: "{{ item }}"
+    name: "{{ gcloud_components }}"
     state: latest
   become: true
-  with_items: "{{ gcloud_components }}"

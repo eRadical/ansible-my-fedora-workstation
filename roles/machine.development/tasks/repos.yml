@@ -3,4 +3,5 @@
   command: /usr/bin/dnf -y copr enable phracek/PyCharm
   args:
     creates: /etc/yum.repos.d/_copr_phracek-PyCharm.repo
+    warn: false
   when: dev_pycharm|bool == True

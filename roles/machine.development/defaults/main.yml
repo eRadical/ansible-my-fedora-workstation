@@ -14,7 +14,7 @@ install_packages:
   - nautilus-open-terminal
   - nload
   - nmon
-  - ntop
+#  - ntop
   - perf
   - poedit
   - rkhunter
@@ -23,7 +23,7 @@ install_packages:
   - vim-common
   - vim-enhanced
   - vim-filesystem
-  - wireshark-gnome
+  - wireshark
   - xorg-x11-server-Xvfb
   - moreutils
   - libfaketime

@@ -1,13 +1,12 @@
 ---
 - name: Install packages
   dnf:
-    name: "{{ item }}"
+    name:
+      - golang
+      - golang-bin
+      - golang-src
     state: latest
   become: true
-  with_items:
-  - golang
-  - golang-bin
-  - golang-src
 
 - name: Creates GOPATH directory
   file:

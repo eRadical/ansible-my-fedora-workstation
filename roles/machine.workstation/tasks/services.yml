@@ -26,7 +26,7 @@
     state: stopped
     enabled: no
     masked: yes
-    user: yes
+    scope: user
   become: false
   with_items:
     - evolution-calendar-factory.service
@@ -39,7 +39,7 @@
     name: gvfs-afc-volume-monitor.service
     state: stopped
     enabled: no
-    user: yes
+    scope: user
   become: false
   when: disable_gvfs_afc|bool == True
 
@@ -48,7 +48,7 @@
     name: gvfs-gphoto2-volume-monitor.service
     state: stopped
     enabled: no
-    user: yes
+    scope: user
   become: false
   when: disable_gvfs_gphoto2|bool == True
 
@@ -57,6 +57,6 @@
     name: gvfs-mtp-volume-monitor.service
     state: stopped
     enabled: no
-    user: yes
+    scope: user
   become: false
   when: disable_gvfs_mtp|bool == True
