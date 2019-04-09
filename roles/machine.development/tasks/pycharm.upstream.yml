@@ -15,7 +15,7 @@
 - name: Symlink build to a fixed folder for PyCharm {{ dev_pycharm_version }}
   become: true
   file:
-    src: "/opt/pycharm-community-{{ dev_pycharm_build }}"
+    src: "/opt/pycharm-community-{{ dev_pycharm_version }}"
     dest: "/opt/pycharm-community"
     state: link
     force: yes
