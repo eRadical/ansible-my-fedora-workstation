@@ -14,15 +14,6 @@
   become: true
   when: ansible_version.full is version_compare('2.3.2.0', '>=')
 
-- name: Install PyCharm
-  dnf:
-    name:
-      - pycharm-community
-      - pycharm-community-plugins
-    state: latest
-  become: true
-  when: dev_pycharm|bool == True
-
 - name: Install Atom
   dnf:
     name: "https://github.com/atom/atom/releases/download/v{{ dev_atom_version }}/atom.x86_64.rpm"

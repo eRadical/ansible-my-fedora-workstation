@@ -59,19 +59,24 @@ php72_remi: yes
 
 digitalocean_install: yes
 
-### PyCharm - from Copr repo see https://copr-be.cloud.fedoraproject.org
+### PyCharm - see https://www.jetbrains.com/pycharm/download/
 dev_pycharm: yes
+dev_pycharm_source: upstream # Valid values: `copr` = install with copr repo or `upstream` = install directly from JetBrains
+dev_pycharm_version: 2019.1.1
+dev_pycharm_build: 191.6605.12
 
-### PhpStorm - see https://confluence.jetbrains.com/display/PhpStorm/Previous+PhpStorm+Releases
+### PhpStorm - see https://www.jetbrains.com/phpstorm/download/
 dev_phpstorm: no
-dev_phpstorm_version: 2018.3.4
-dev_phpstorm_build: 183.5429.47
+dev_phpstorm_version: 2019.1
+dev_phpstorm_build: 191.6183.95
 
-### Goland - see: https://www.jetbrains.com/go/download/
+### Goland - see https://www.jetbrains.com/go/download/
 dev_goland: no
-dev_goland_version: 2018.2.3
-dev_goland_build: 182.4505.32
+dev_goland_version: 2019.1
+dev_goland_build: 191.6183.86
 
 ### Atom - see https://github.com/atom/atom/releases
 dev_atom: yes
 dev_atom_version: 1.36.0-beta2
+
+### https://flight-manual.atom.io/getting-started/sections/installing-atom/

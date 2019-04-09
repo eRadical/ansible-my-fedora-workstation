@@ -1,0 +1,16 @@
+---
+
+- name: DNF enable PyCharm COPR repo
+  command: /usr/bin/dnf -y copr enable phracek/PyCharm
+  args:
+    creates: /etc/yum.repos.d/_copr_phracek-PyCharm.repo
+    warn: false
+  become: true
+
+- name: Install PyCharm
+  dnf:
+    name:
+      - pycharm-community
+      - pycharm-community-plugins
+    state: latest
+  become: true

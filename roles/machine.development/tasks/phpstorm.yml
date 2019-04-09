@@ -2,7 +2,7 @@
 - name: Download PhpStorm {{ dev_phpstorm_version }}
   become: true
   get_url:
-    url: "http://download.jetbrains.com/webide/PhpStorm-{{ dev_phpstorm_version }}.tar.gz"
+    url: "https://download-cf.jetbrains.com/webide/PhpStorm-{{ dev_phpstorm_version }}.tar.gz"
     dest: "/opt/PhpStorm-{{ dev_phpstorm_version }}.tar.gz"
     mode: 0666
 
