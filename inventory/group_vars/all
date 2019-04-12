@@ -8,12 +8,12 @@ disable_gvfs_afc: yes
 disable_gvfs_gphoto2: yes
 ### Disable - Virtual filesystem service - Media Transfer Protocol monitor
 disable_gvfs_mtp: yes
+#  - google-chrome-unstable
 
 add_google_chrome: yes
 google_chrome_version:
   - google-chrome-stable
 #  - google-chrome-beta
-#  - google-chrome-unstable
 
 # Accept router advertisements
 ipv6_accept_ra: yes
@@ -49,13 +49,16 @@ gcloud_components:
 #  - google-cloud-sdk-pubsub-emulator
 
 docker_install: yes
+# https://docs.docker.com/install/linux/docker-ce/fedora/
+
 nodejs_install: yes
 
 go_install: yes
 go_gopath: ~/WORKSPACE/GO
 
-# Install PHP 7.2 from Remi repos
-php72_remi: yes
+# Install PHP 7.2 or 7.3 from OS repo (7.2) or REMI repo (7.2 or 7.3)
+php_version: 7.2
+php_source: os
 
 digitalocean_install: yes
 

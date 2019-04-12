@@ -1,26 +1,21 @@
 ---
-- name: Install REMI repo
-  yum_repository:
-    name: remi
-    description: Remi's RPM repository for Fedora $releasever - $basearch
-    #baseurl: http://rpms.remirepo.net/fedora/$releasever/remi/$basearch/
-    mirrorlist: http://cdn.remirepo.net/fedora/$releasever/remi/mirror
-    enabled: yes
-    gpgcheck: yes
-    gpgkey: http://rpms.remirepo.net/RPM-GPG-KEY-remi
-    #skip_if_unavailable: yes
-    #failovermethod: priority
-- name: Install REMI PHP 7.2 repo
-  yum_repository:
-    name: remi-php72
-    description: Remi's PHP 7.2 RPM repository for Fedora $releasever - $basearch
-    #baseurl: http://rpms.remirepo.net/fedora/$releasever/php72/$basearch/
-    mirrorlist: http://cdn.remirepo.net/fedora/$releasever/php72/mirror
-    enabled: yes
-    gpgcheck: yes
-    gpgkey: http://rpms.remirepo.net/RPM-GPG-KEY-remi
-    #skip_if_unavailable: yes
-    #failovermethod: priority
+- name: Sanity check
+  fail:
+    msg: "From Fedora repos you can only get PHP 7.2. From Remi repos you can get PHP 7.2 or 7.3."
+  when: php_source == "os" and php_version != "7.2"
+
+- name: Install REMI and activate it
+  block:
+  - name: Install REMI repo
+    dnf:
+      name:
+        - http://rpms.remirepo.net/fedora/remi-release-29.rpm
+      state: present
+  - name: Aactivate it
+    command: "dnf module install remi-php:{{ php_version }}"
+    args:
+      warn: false
+  when: php_source == "remi"
 
 - name: Install PHP packages
   become: true
