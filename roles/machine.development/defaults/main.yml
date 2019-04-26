@@ -20,6 +20,7 @@ install_packages:
   - rkhunter
   - s3cmd
   - strace
+  - stress
   - vim-common
   - vim-enhanced
   - vim-filesystem
