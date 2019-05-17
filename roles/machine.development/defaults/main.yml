@@ -28,3 +28,6 @@ install_packages:
   - xorg-x11-server-Xvfb
   - moreutils
   - libfaketime
+  - pigz
+  - xz
+  - pxz
