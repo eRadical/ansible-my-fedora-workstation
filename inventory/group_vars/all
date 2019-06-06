@@ -45,8 +45,8 @@ gcloud_components:
 #  - google-cloud-sdk-bigtable-emulator
 #  - google-cloud-sdk-cbt
 #  - google-cloud-sdk-datalab
-#  - google-cloud-sdk-datastore-emulator
-#  - google-cloud-sdk-pubsub-emulator
+  - google-cloud-sdk-datastore-emulator
+  - google-cloud-sdk-pubsub-emulator
 
 docker_install: yes
 # https://docs.docker.com/install/linux/docker-ce/fedora/

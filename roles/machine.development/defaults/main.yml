@@ -31,3 +31,4 @@ install_packages:
   - pigz
   - xz
   - pxz
+  - jq
