@@ -65,21 +65,21 @@ digitalocean_install: yes
 ### PyCharm - see https://www.jetbrains.com/pycharm/download/
 dev_pycharm: yes
 dev_pycharm_source: upstream # Valid values: `copr` = install with copr repo or `upstream` = install directly from JetBrains
-dev_pycharm_version: 2019.1.1
-dev_pycharm_build: 191.6605.12
+dev_pycharm_version: 2019.1.3
+dev_pycharm_build: 191.7479.30
 
 ### PhpStorm - see https://www.jetbrains.com/phpstorm/download/
 dev_phpstorm: no
-dev_phpstorm_version: 2019.1
-dev_phpstorm_build: 191.6183.95
+dev_phpstorm_version: 2019.1.2
+dev_phpstorm_build: 191.7141.52
 
 ### Goland - see https://www.jetbrains.com/go/download/
 dev_goland: no
-dev_goland_version: 2019.1
-dev_goland_build: 191.6183.86
+dev_goland_version: 2019.1.3
+dev_goland_build: 191.7479.32
 
 ### Atom - see https://github.com/atom/atom/releases
 dev_atom: yes
-dev_atom_version: 1.36.0-beta2
+dev_atom_version: 1.38.0-beta0
 
 ### https://flight-manual.atom.io/getting-started/sections/installing-atom/
