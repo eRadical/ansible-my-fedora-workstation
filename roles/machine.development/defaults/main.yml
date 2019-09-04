@@ -1,6 +1,8 @@
 ---
 install_packages:
   - awscli
+  - bcc
+  - bcc-tools
   - bmon
   - fatrace
   - fuse-sshfs
