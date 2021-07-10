@@ -10,8 +10,8 @@
 
 - include_tasks: services.yml
 
-- include_tasks: php72.yml
-  when: php72_remi
+- include_tasks: php7.yml
+
 - include_tasks: phpstorm.yml
   when: dev_phpstorm|bool == True
 

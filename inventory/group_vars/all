@@ -7,8 +7,7 @@ disable_gvfs_afc: yes
 ### Disable - Virtual filesystem service - digital camera monitor
 disable_gvfs_gphoto2: yes
 ### Disable - Virtual filesystem service - Media Transfer Protocol monitor
-disable_gvfs_mtp: yes
-#  - google-chrome-unstable
+disable_gvfs_mtp: no
 
 add_google_chrome: yes
 google_chrome_version:
@@ -57,7 +56,7 @@ go_install: yes
 go_gopath: ~/WORKSPACE/GO
 
 # Install PHP 7.2 or 7.3 from OS repo (7.2) or REMI repo (7.2 or 7.3)
-php_version: 7.2
+php_version: 7.3
 php_source: os
 
 digitalocean_install: yes

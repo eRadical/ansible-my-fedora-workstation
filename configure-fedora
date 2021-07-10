@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-sudo dnf -y --refresh install ansible cowsay python2-dnf python3-dnf
+sudo dnf -y --refresh install ansible cowsay python3-dnf
 
 AP=$(which ansible-playbook)
 

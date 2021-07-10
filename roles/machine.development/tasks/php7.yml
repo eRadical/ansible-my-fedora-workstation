@@ -1,9 +1,4 @@
 ---
-- name: Sanity check
-  fail:
-    msg: "From Fedora repos you can only get PHP 7.2. From Remi repos you can get PHP 7.2 or 7.3."
-  when: php_source == "os" and php_version != "7.2"
-
 - name: Install REMI and activate it
   block:
   - name: Install REMI repo

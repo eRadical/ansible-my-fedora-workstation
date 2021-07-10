@@ -8,10 +8,6 @@ remove_evolution: no
 
 remove_packages:
   - fprintd
-  - 'zeitgeist*'
-  - gedit-plugin-zeitgeist
-  - gedit-plugins
-  - tracker-miners
 
 install_packages:
   - astronomy-backgrounds
@@ -35,7 +31,6 @@ install_packages:
   - gedit-plugin-colorpicker
   - gedit-plugin-colorschemer
   - gedit-plugin-commander
-  - gedit-plugin-dashboard
   - gedit-plugin-drawspaces
   - gedit-plugin-findinfiles
   - gedit-plugin-git
@@ -52,7 +47,6 @@ install_packages:
   - gnome-backgrounds-extras
   - gnome-music
   - gnome-shell-extension-background-logo
-  - gnome-shell-extension-calc
   - gnome-shell-extension-gpaste
   - gnome-shell-extension-openweather
   - gnome-tweak-tool
@@ -75,7 +69,6 @@ install_packages:
   - numad
   - numlockx
   - powertop
-  - pulseaudio-equalizer
   - system-config-printer
   - tigervnc
   - tuned
