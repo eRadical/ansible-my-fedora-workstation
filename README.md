@@ -10,7 +10,7 @@ Workstation role changes:
 - Installs RPM Fusion repos (free & non free)
 - Installs Slack repo
 - Installs a lot of packages (see them in roles/machine.workstation/defaults/main.yml) and also removes others (evolution)
-- Enables some services (numad, tuned, ntpd) and also disables others (iio-sensor-proxy)
+- Enables some services (numad, tuned, chronyd) and also disables others (iio-sensor-proxy)
 - Installs Google Chrome (stable by default, it can also do beta and/or unstable)
 
 Developer role changes:

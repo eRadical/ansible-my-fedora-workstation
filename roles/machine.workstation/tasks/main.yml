@@ -14,7 +14,7 @@
 - include_tasks: mattermost.yaml
   when: workstation_mattermost | bool == True
 
-- include_tasks: networking.yml
+# - include_tasks: networking.yml
 
 - name: Stop tracker-store.desktop
   become: yes

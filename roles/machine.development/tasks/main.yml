@@ -3,25 +3,10 @@
 
 - include_tasks: packages.yml
 
-- include_tasks: "pycharm.{{ dev_pycharm_source }}.yml"
-  when:
-    - dev_pycharm
-    - dev_pycharm_source == "upstream" or dev_pycharm_source == "copr"
-
 - include_tasks: services.yml
-
-- include_tasks: php7.yml
-
-- include_tasks: phpstorm.yml
-  when: dev_phpstorm|bool == True
 
 - include_tasks: go.yml
   when: go_install|bool == True
-- include_tasks: goland.yml
-  when: dev_goland|bool == True
-
-- include_tasks: digitalocean.yml
-  when: digitalocean_install|bool == True
 
 - include_tasks: gcloud.yml
   when: gcloud_install|bool == True

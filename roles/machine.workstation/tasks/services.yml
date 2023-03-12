@@ -8,7 +8,7 @@
   with_items:
     - numad
     - tuned
-    - ntpd
+    - chronyd
 
 - name: Stop unusefull services
   systemd:

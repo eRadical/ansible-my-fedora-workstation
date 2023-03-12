@@ -6,17 +6,13 @@ disable_gvfs_mtp: yes
 
 remove_evolution: no
 
-remove_packages:
-  - fprintd
+#remove_packages:
+#  - fprintd
 
 install_packages:
-  - astronomy-backgrounds
   - desktop-backgrounds-basic
   - desktop-backgrounds-compat
   - desktop-backgrounds-gnome
-  - earth-and-moon-backgrounds
-  - earth-and-moon-backgrounds-common
-  - earth-and-moon-backgrounds-dual
   - "f{{ ansible_distribution_major_version }}-backgrounds"
   - "f{{ ansible_distribution_major_version }}-backgrounds-base"
   - "f{{ ansible_distribution_major_version }}-backgrounds-extras-base"
@@ -58,14 +54,13 @@ install_packages:
   - libreoffice-langpack-en
   - libreoffice-langpack-ro
   - libreoffice-wiki-publisher
-  - libselinux-python
   - lm_sensors
   - lshw
   - lynx
   - mc
   - mediawriter
   - 'mplayer*'
-  - ntp
+  - chrony
   - numad
   - numlockx
   - powertop

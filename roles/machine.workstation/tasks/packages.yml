@@ -10,6 +10,7 @@
     name: "{{ remove_packages }}"
     state: absent
   become: true
+  when: remove_packages is defined
 
 - name: Remove Evolution
   dnf:
