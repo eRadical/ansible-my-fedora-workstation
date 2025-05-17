@@ -41,6 +41,7 @@
     enabled: no
     scope: user
   become: false
+  ignore: true
   when: disable_gvfs_afc|bool == True
 
 - name: Disable - Virtual filesystem service - digital camera monitor

@@ -4,6 +4,9 @@
   vars:
     developer_machine: True
   tasks:
-    - name: Include ansible-my-fedora-workstation
+    - name: Include machine.workstation
       include_role:
-        name: ansible-my-fedora-workstation
+        name: machine.workstation
+    - name: Include machine.development
+      include_role:
+        name: machine.development
