@@ -2,7 +2,7 @@
 - name: Side effects
   hosts: all
   vars:
-    abc: 'xyz'
+    developer_machine: True
   tasks:
     - name: Include ansible-my-fedora-workstation
       include_role:
