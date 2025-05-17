@@ -2,14 +2,10 @@
 name: Verification
 on:
   push:
-    branches-ignore:
-      - main
-      - master
+    branches: [ "master" ]
   pull_request:
-    branches:
-      - develop
-      - main
-      - master
+    branches: [ "master" ]
+  workflow_dispatch:
 jobs:
   molecule:
     name: Molecule Test
