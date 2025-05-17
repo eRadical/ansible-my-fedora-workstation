@@ -1,7 +1,10 @@
 ---
 - hosts: all
   tasks:
-    - name: install the latest version of Apache and MariaDB
+    - name: Install python in Fedora
+      ansible.builtin.raw: dnf install -y python3 python3-libdnf5
+      changed_when: false
+    - name: install the latest version
       dnf:
         name: "*"
         state: latest

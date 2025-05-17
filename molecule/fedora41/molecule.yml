@@ -14,7 +14,7 @@ lint: |
   flake8
 
 platforms:
-  - name: node1
+  - name: theFedoraNode
     image: "fedora:41"
     privileged: true
     command: /usr/sbin/init
