@@ -1,0 +1,9 @@
+---
+- name: Side effects
+  hosts: all
+  vars:
+    abc: 'xyz'
+  tasks:
+    - name: Include ansible-my-fedora-workstation
+      include_role:
+        name: ansible-my-fedora-workstation

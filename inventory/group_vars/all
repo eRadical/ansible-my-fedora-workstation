@@ -3,7 +3,7 @@
 remove_evolution: yes
 
 ### Disable - Virtual filesystem service - Apple File Conduit monitor
-disable_gvfs_afc: yes
+disable_gvfs_afc: no
 ### Disable - Virtual filesystem service - digital camera monitor
 disable_gvfs_gphoto2: yes
 ### Disable - Virtual filesystem service - Media Transfer Protocol monitor
@@ -15,7 +15,7 @@ google_chrome_version:
 #  - google-chrome-beta
 
 # Accept router advertisements
-ipv6_accept_ra: yes
+ipv6_accept_ra: no
 # Duplicate Address Detection
 ipv6_accept_dad: no
 # Disable DUID: enable this if you're in a network with a Windows DHCP server
@@ -59,7 +59,7 @@ go_gopath: ~/WORKSPACE/GO
 php_version: 8.1
 php_source: os
 
-digitalocean_install: yes
+digitalocean_install: no
 
 dev_pycharm: no
 dev_phpstorm: no
