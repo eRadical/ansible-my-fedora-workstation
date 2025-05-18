@@ -10,6 +10,6 @@
 
 - name: Install Google Chrome
   dnf:
-    name: "{{ google_chrome_version }}"
+    name: "{{ google_chrome_flavour }}"
     state: latest
   become: true

@@ -2,5 +2,5 @@
   hosts: all
   tasks:
   - name: Example assertion
-    assert:
-      that: true
+    ansible.builtin.assert:
+      that: false

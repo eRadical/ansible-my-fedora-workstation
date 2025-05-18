@@ -41,8 +41,9 @@
     enabled: no
     scope: user
   become: false
-  ignore: true
+  register: gvfs_afc_service_result
   when: disable_gvfs_afc|bool == True
+  failed_when: "gvfs_afc_service_result is failed and 'Could not find the requested service' not in gvfs_afc_service_result.msg"
 
 - name: Disable - Virtual filesystem service - digital camera monitor
   systemd:
@@ -51,7 +52,9 @@
     enabled: no
     scope: user
   become: false
+  register: gvfs_gphoto2_service_result
   when: disable_gvfs_gphoto2|bool == True
+  failed_when: "gvfs_gphoto2_service_result is failed and 'Could not find the requested service' not in gvfs_gphoto2_service_result.msg"
 
 - name: Disable - Virtual filesystem service - Media Transfer Protocol monitor
   systemd:
@@ -60,4 +63,6 @@
     enabled: no
     scope: user
   become: false
+  register: gvfs_mtp_service_result
   when: disable_gvfs_mtp|bool == True
+  failed_when: "gvfs_mtp_service_result is failed and 'Could not find the requested service' not in gvfs_mtp_service_result.msg"

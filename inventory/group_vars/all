@@ -10,7 +10,7 @@ disable_gvfs_gphoto2: yes
 disable_gvfs_mtp: no
 
 add_google_chrome: yes
-google_chrome_version:
+google_chrome_flavour:
   - google-chrome-stable
 #  - google-chrome-beta
 
@@ -22,9 +22,6 @@ ipv6_accept_dad: no
 dhcp_disable_duid: no
 
 workstation_slack: yes
-
-workstation_mattermost: no
-workstation_mattermost_copr: "agoston/mattermost"
 
 ################################################################################
 ### Below are setting for a developer machine
@@ -64,6 +61,3 @@ digitalocean_install: no
 dev_pycharm: no
 dev_phpstorm: no
 dev_goland: no
-
-dev_atom: no
-

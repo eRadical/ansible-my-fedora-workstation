@@ -8,4 +8,3 @@
     - name: Include machine.development
       include_role:
         name: machine.development
-      when: developer_machine|bool == True

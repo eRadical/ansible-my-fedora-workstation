@@ -6,58 +6,67 @@ disable_gvfs_mtp: yes
 
 remove_evolution: no
 
+add_google_chrome: yes
+google_chrome_flavour:
+  - google-chrome-stable
+#  - google-chrome-beta
+#  - google-chrome-canary
+#  - google-chrome-unstable
+
+workstation_slack: yes
+
 #remove_packages:
 #  - fprintd
 
 install_packages:
-  - desktop-backgrounds-basic
-  - desktop-backgrounds-compat
-  - desktop-backgrounds-gnome
-  - "f{{ ansible_distribution_major_version }}-backgrounds"
-  - fedora-workstation-backgrounds
-  - ffmpeg
-  - gedit-plugin-bookmarks
-  - gedit-plugin-bracketcompletion
-  - gedit-plugin-charmap
-  - gedit-plugin-codecomment
-  - gedit-plugin-colorpicker
-  - gedit-plugin-drawspaces
-  - gedit-plugin-git
-  - gedit-plugin-joinlines
-  - gedit-plugin-multiedit
-  - gedit-plugins-data
-  - gedit-plugin-smartspaces
-  - gedit-plugin-terminal
-  - gedit-plugin-textsize
-  - gedit-plugin-wordcompletion
-  - glances
-  - gnome-backgrounds
-  - gnome-backgrounds-extras
-  - gnome-music
-  - gnome-shell-extension-background-logo
-  - gnome-shell-extension-gpaste
-  - gnome-shell-extension-openweather
+#  - desktop-backgrounds-basic
+#  - desktop-backgrounds-compat
+#  - desktop-backgrounds-gnome
+#  - "f{{ ansible_distribution_major_version }}-backgrounds"
+#  - fedora-workstation-backgrounds
+#  - ffmpeg
+#  - gedit-plugin-bookmarks
+#  - gedit-plugin-bracketcompletion
+#  - gedit-plugin-charmap
+#  - gedit-plugin-codecomment
+#  - gedit-plugin-colorpicker
+#  - gedit-plugin-drawspaces
+#  - gedit-plugin-git
+#  - gedit-plugin-joinlines
+#  - gedit-plugin-multiedit
+#  - gedit-plugins-data
+#  - gedit-plugin-smartspaces
+#  - gedit-plugin-terminal
+#  - gedit-plugin-textsize
+#  - gedit-plugin-wordcompletion
+#  - glances
+#  - gnome-backgrounds
+#  - gnome-backgrounds-extras
+#  - gnome-music
+#  - gnome-shell-extension-background-logo
+#  - gnome-shell-extension-gpaste
+#  - gnome-shell-extension-openweather
   - gnome-tweak-tool
-  - gparted
-  - gwenview
+#  - gparted
+#  - gwenview
   - kernel-modules-extra
-  - libreoffice-gallery-vrt-network-equipment
-  - libreoffice
-  - libreoffice-langpack-en
-  - libreoffice-langpack-ro
-  - libreoffice-wiki-publisher
+#  - libreoffice-gallery-vrt-network-equipment
+#  - libreoffice
+#  - libreoffice-langpack-en
+#  - libreoffice-langpack-ro
+#  - libreoffice-wiki-publisher
   - lm_sensors
-  - lshw
-  - lynx
-  - mc
-  - mediawriter
+#  - lshw
+#  - lynx
+#  - mc
+#  - mediawriter
   - 'mplayer*'
   - chrony
   - numad
-  - numlockx
-  - powertop
-  - system-config-printer
-  - tigervnc
+#  - numlockx
+#  - powertop
+#  - system-config-printer
+#  - tigervnc
   - tuned
   - 'vlc*'
   - 'wine*'

@@ -14,13 +14,6 @@
   become: true
   when: ansible_version.full is version_compare('2.3.2.0', '>=')
 
-- name: Install Atom
-  dnf:
-    name: "https://github.com/atom/atom/releases/download/v{{ dev_atom_version }}/atom.x86_64.rpm"
-    state: present
-  become: true
-  when: dev_atom|bool == True
-
 - name: Install NodeJS
   dnf:
     name: nodejs
