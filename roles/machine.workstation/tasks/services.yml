@@ -1,5 +1,5 @@
 ---
-- name: Start usefull services
+- name: Start useful services
   systemd:
     name: "{{ item }}"
     state: started
@@ -10,7 +10,7 @@
     - tuned
     - chronyd
 
-- name: Stop unusefull services
+- name: Stop unuseful services
   systemd:
     name: "{{ item }}"
     state: stopped

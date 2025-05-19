@@ -34,3 +34,22 @@ install_packages:
   - moreutils
   - libfaketime
   - xz
+
+nodejs_install: no
+
+go_install: no
+go_gopath: ~/WORKSPACE/GO
+
+# Install PHP 7.2 or 7.3 from OS repo (7.2) or REMI repo (7.2 or 7.3)
+php_version: 8.1
+php_source: os
+
+digitalocean_install: no
+
+dev_pycharm: no
+dev_phpstorm: no
+dev_goland: no
+
+gcloud_install: no
+
+docker_install: yes

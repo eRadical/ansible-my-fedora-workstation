@@ -2,12 +2,7 @@
 - name: Configure this Fedora system
   hosts: localhost
   become: true
-
-  # pre_tasks:
-  #   - name: Debug
-  #     debug:
-  #       msg: "the value is {{ developer_machine|bool }}"
-
   roles:
     - machine.workstation
-    - { role: machine.development, when: developer_machine|bool == True }
+    - role: machine.development
+      when: developer_machine|bool == True

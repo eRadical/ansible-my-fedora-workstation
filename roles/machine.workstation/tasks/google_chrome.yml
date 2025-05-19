@@ -1,7 +1,7 @@
 ---
 - name: Add Google Chrome repo
   yum_repository:
-    name: google-chrome
+    name: google-chrome-initial-repo
     description: google-chrome
     baseurl: http://dl.google.com/linux/chrome/rpm/stable/x86_64
     enabled: yes

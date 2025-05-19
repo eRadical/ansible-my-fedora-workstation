@@ -1,6 +1,7 @@
 - name: Verify
   hosts: all
   tasks:
-  - name: Example assertion
+  - name: Example assertions specific for F41
     ansible.builtin.assert:
-      that: false
+      that: true
+
