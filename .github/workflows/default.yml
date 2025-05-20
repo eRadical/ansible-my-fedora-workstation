@@ -16,10 +16,8 @@ jobs:
       matrix:
         molecule_distro:
           - fedora41
-#          - fedora42
-#          - fedora43
-#          - rocky8
-#          - rocky9
+          - fedora42
+          - fedora43
     steps:
       - uses: actions/checkout@v3
         with:

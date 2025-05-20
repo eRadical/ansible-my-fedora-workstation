@@ -14,15 +14,18 @@ lint: |
   flake8
 
 platforms:
-  - name: theFedora41Node
-    image: "fedora:41"
+  - name: theFedora43Node
+    image: "fedora:43"
     privileged: true
-    command: /usr/sbin/init
+#    command: /usr/sbin/init
     volumes:
       - /sys/fs/cgroup:/sys/fs/cgroup:rw
     cgroupns_mode: host
     groups:
       - group1
+    tmpfs:
+      - /run
+      - /tmp
 
 provisioner:
   name: ansible

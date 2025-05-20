@@ -1,0 +1,30 @@
+- name: Verify
+  hosts: all
+  tasks:
+    - name: Minimal assertion - check if we reach this point
+      ansible.builtin.assert:
+        that: true
+    - name: Tests for role "machine.workstation"
+      block:
+        - name: Test for installed repos
+          ansible.builtin.package_facts:
+            manager: auto
+          register: machine_installed_packages
+        - name: Assert repos for rpmfusion-free-release
+          ansible.builtin.assert:
+            that: "'rpmfusion-free-release' in machine_installed_packages.ansible_facts.packages"
+            fail_msg: "Unable to find rpmfusion-free-release in installed packages."
+        - name: Assert repos for rpmfusion-nonfree-release
+          ansible.builtin.assert:
+            that: "'rpmfusion-nonfree-release' in machine_installed_packages.ansible_facts.packages"
+            fail_msg: "Unable to find rpmfusion-nonfree-release in installed packages."
+
+    - name: import variables from role
+      ansible.builtin.include_vars:
+        file: ../shared/machine.development/defaults/main.yml
+    - name: Tests for role "machine.development"
+      block:
+        - name: Minimal assertion - check if we reach this point
+          ansible.builtin.assert:
+            that: true
+      when: developer_machine|bool == True
